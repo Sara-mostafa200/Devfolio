@@ -1,0 +1,567 @@
+:root {
+  --main-color: #007aff;
+  --text-color: #4e4e4e;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* navbar  */
+
+.navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: white;
+  --bs-navbar-disabled-color: white;
+  --bs-navbar-active-color: white;
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: white;
+  --bs-navbar-brand-hover-color: white;
+}
+
+.navbar .nav-link {
+  margin-right: 0.9375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-toggler-icon {
+  display: none;
+}
+
+.navbar-toggler:focus {
+  display: none;
+}
+
+/*  dropdown menu */
+
+.dropdown-menu {
+  border-radius: 0 !important;
+  padding: 1.25rem 0;
+  border: none;
+}
+
+.dropdown-menu a {
+  padding: 0.625rem 3.125rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4e4e4e;
+  transition: all 0.3s;
+}
+
+.navbar a i {
+  color: #a8a8a8b9;
+}
+
+.navbar .dropdown > .dropdown-menu {
+  display: none;
+}
+
+.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu .dropstart:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropstart .dropdown-toggle::before {
+  display: none;
+}
+
+.dropdown .dropdown-menu li:hover a.b-color,
+.dropstart .dropdown-menu li:hover .a-color {
+  color: var(--main-color);
+}
+
+
+/************************************  hero*********************************** */
+#hero {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-color: rgba(0, 0, 0, 0.486);
+  background-blend-mode: multiply;
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 3.125rem;
+  margin-bottom: 1.875rem;
+}
+.home span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/************************************ about*********************************** */
+.about{
+    background-color: white;
+    
+}
+
+
+
+
+.about .skill span{
+    font-size: 1.125rem;
+}
+.about .skill p{
+    padding: 0.625rem 0 ;
+    margin: 0;
+}
+.about .skill .p-info {
+    min-width: 15.625rem;
+}
+.about .skill .t-info .skill{
+    font-size: 1.125rem;
+} 
+
+.about .progress, .progress-stacked {
+    border-radius: 0;
+    height: 0.75rem;
+}
+.about .about-me h3{
+    position: relative;
+    padding-bottom: 0.625rem;
+}
+.about .about-me h3::after{
+    content: "";
+    height: 0.1875rem;
+    width: 6.5625rem;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+    transition: all 0.3s;
+}
+
+.about .about-me p{
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-bottom: 2.5rem;
+}
+
+#About .f-btn {
+  position: fixed;
+  bottom:1.5625rem;
+  right: 1.25rem;
+  z-index: 4;
+  
+}
+
+#About .f-btn a{
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 0.625rem 0.9375rem;
+  
+  
+  
+}
+#About .f-btn a i{
+  font-size: 0.9375rem;
+ 
+  color: white;
+}
+
+
+/************************************Services*********************************** */
+.services h2{
+font-size: 3.125rem;
+font-weight: 700;
+}
+
+.services .title .line{
+    
+    height: 0.3125rem;
+    width: 2.25rem;
+    background-color:var(--main-color);
+    margin: auto;
+    margin-bottom: 0.625rem;
+    
+   
+}
+
+.services .card{
+    background-color: transparent;
+}
+
+.services .card-body{
+    background-color: white;
+    border-radius: 0.5625rem;
+    padding: 1.5625rem;
+}
+
+.services .card-body .icon i{
+    font-size: 2.5rem;
+    padding: 2.1875rem;
+    border-radius: 50%;
+    border: 0.625rem solid var(--main-color);
+    transition: all 0.4s;
+    
+}
+
+.services .card-body .icon i:hover{
+ background-color: var(--main-color);
+ border-color: #cde1f8;
+ color: white;
+}
+
+.services .card-body h3{
+    font-weight: 500;
+    font-size: 1.375rem;
+    margin: 0.9375rem 0;
+}
+  
+
+/************************************numbers*********************************** */
+#number{
+    
+    background-image:linear-gradient(rgba(0, 112, 231, 0.836),rgba(0, 123, 255, 0.651)) ,url(../images/post-3.jpg);
+    background-position: center center ;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+ 
+  
+}
+
+
+.number .circle i{
+    font-size: 1.875rem;
+    padding: 1.5625rem;
+    border-radius: 50%;
+    border: 0.625rem solid #cde1f8;
+    color: white;
+   
+}
+
+.number .circle h4{
+ font-size: 1.875rem;
+ font-weight: 400;
+ color: white;
+}
+.number .circle p{
+
+ color: white;
+}
+#number .layer{
+ padding: 3.125rem;
+    
+}
+/************************************Portfolio*********************************** */
+
+.Portfolio h2{
+  font-size: 3.125rem;
+  font-weight: 700;
+  }
+  
+  .Portfolio .title .line{
+      
+      height: 0.3125rem;
+      width: 2.25rem;
+      background-color:var(--main-color);
+      margin: auto;
+      margin-bottom: 0.625rem;
+      
+     
+  }
+
+  .Portfolio .card{
+    background-color: transparent;
+    border: none;
+    
+  }
+  .Portfolio .card .img{
+    
+    overflow: hidden;
+  }
+
+  .Portfolio .card img{
+    transition: all 1s;
+  }
+  .Portfolio .card img:hover{
+   transform: scale(1.4);
+  }
+
+  .Portfolio .card .card-body{
+    background-color: white;
+  }
+  .Portfolio .card .card-body p{
+    font-size: 0.875rem;
+    color:var(--text-color);
+    
+  }
+  .Portfolio .card .card-body span{
+    color: var(--main-color);
+  }
+  .Portfolio .card .card-body a i{
+     font-size: 1.25rem;
+     border: 0.1875rem solid var(--main-color);
+     border-radius: 50%;
+     padding: 0.3125rem;
+  }
+
+  /************************************carousel*********************************** */
+  #carousel{
+    
+    background-image:linear-gradient(rgba(0, 112, 231, 0.836),rgba(0, 123, 255, 0.651)) ,url(../images/overlay-bg.jpg);
+    background-position: center center ;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+ 
+  
+}
+.carousel{
+  padding: 3rem 0;
+}
+.carousel-item {
+  float: left;
+}
+
+.carousel .pic img{
+  width: 7.5rem;
+  margin: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+
+  width: 0.625rem;
+  height: 0.625rem;
+
+  background-color: #fff;
+
+  border-radius: 50%;
+  border-top: none;
+  border-bottom: none;
+  
+}
+
+  /************************************blog*********************************** */
+  .blog h2{
+    font-size: 3.125rem;
+    font-weight: 700;
+    }
+    
+    .blog .title .line{
+        
+        height: 0.3125rem;
+        width: 2.25rem;
+        background-color:var(--main-color);
+        margin: auto;
+        margin-bottom: 0.625rem;
+        
+       
+    }
+
+    .blog .card{
+      background-color: transparent;
+      border:none;
+     
+    }
+
+    .blog .card .text{
+      
+      text-align: center;
+      color: white;
+      position: absolute;
+      left: calc((100% - 5.625rem)/2);
+      top: -0.9375rem;
+      z-index: 2;
+      
+      
+      
+      p{
+     
+        width: 5.625rem;
+      height: 1.5625rem;
+      border-radius: 0.1875rem;
+        background-color: var(--main-color);
+       font-size: 0.6875rem;
+       margin-bottom: 0;
+       padding: 0.3125rem 0.25rem;
+      }
+    }
+    .blog .card h5{
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    .blog .card h5:hover{
+      color: var(--main-color);
+    }
+    .blog .card-body{
+      background-color: white;
+      border: 0.0625rem solid rgba(0, 0, 0, 0.175);;
+    }
+
+    .blog .card-footer img{
+      width: 2.1875rem;
+
+    }
+    .blog .card-footer{
+      border: 0.0625rem solid rgba(0, 0, 0, 0.175);;
+      border-top: 0;
+    }
+  /************************************contact*********************************** */
+  #contact{
+    
+    background-image:linear-gradient(rgba(0, 112, 231, 0.836),rgba(0, 123, 255, 0.651)) ,url(../images/overlay-bg.jpg);
+    background-position: center center ;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  
+ 
+  
+}
+
+.contact {
+  background-color: white;
+
+}
+
+.contact  h3{
+  position: relative;
+  padding-bottom: 0.625rem;
+  box-sizing: border-box;
+}
+.contact  h3::after{
+  content: "";
+  height: 0.1875rem;
+  width: 8.125rem;
+  background-color:var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0rem;
+  transition: all 0.3s;
+}
+
+.contact .send form input ,.contact .send form textarea{
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  transition: all 0.3s;
+  border:0.0625rem solid #dee2e6;
+} 
+
+.contact .send form input:focus-visible ,.contact .send form textarea:focus {
+  outline: none;
+  border:0.0625rem solid var(--main-color);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.contact .send form .f-btn{
+  border-radius: 1.875rem;
+  width: 11.25rem;
+  font-weight: 300;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.contact .send form .f-btn:hover{
+  background: #3393ff;
+  box-shadow: 0 0 0 0.25rem #cde1f8;
+  border-color: transparent ;
+}
+
+.contact .get-in-touch .content{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.contact .get-in-touch .icon i{
+ color: var(--main-color);
+ margin-right: 0.625rem;
+
+}
+
+.contact .get-in-touch .social i{
+  border: 0.1875rem solid var(--main-color);
+  border-radius: 50%;
+  padding: 0.625rem;
+  color: black;
+  margin-right: 0.1875rem;
+  transition: all 0.5s ;
+}
+
+.contact .get-in-touch .social i:hover{
+  background: var(--main-color);
+  color: white;
+  box-shadow: 0 0 0 0.25rem #cde1f8;
+
+}
+
+ /************************************footer*********************************** */
+footer{
+  background-color: #0062d3;
+  box-shadow: 0rem 0.1875rem 0.625rem 0.0625rem #0159bd inset ;
+}
+
+
+
+/* media */
+
+@media screen and (min-width: 64rem) {
+  /* navbar */
+  .dropdown-menu .dropdown-menu {
+    position: relative;
+    right: 100%;
+    top: 10%;
+  }
+
+  .navbar .nav-link::after,
+  .navbar li.dropdown::after {
+    content: "";
+    height: 0.125rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -12.5rem;
+    transition: all 0.3s;
+  }
+  .navbar li.dropdown::after {
+    display: none;
+  }
+  .navbar .nav-link:hover::after {
+    left: 0;
+  }
+
+  .navbar li.dropdown:hover:after {
+    left: 0;
+    display: block;
+  }
+
+  /************************************ hero*********************************** */
+  .home h1 {
+    font-size: 4.375rem;
+  }
+
+
+  /************************************carousel *********************************** */
+
+  .carousel .pic img{
+    width: 15%;
+    
+  }
+}
+
